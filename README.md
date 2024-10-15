@@ -1,50 +1,69 @@
-# React + TypeScript + Vite
+# Blusalt - Traffic Light System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the 1st task in my blusalt take home assessment.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### The challenge
 
-- Configure the top-level `parserOptions` property like this:
+### Introduction- Traffic light system
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Develop a system for traffic passing through a 4-way intersection, controlled by traffic light. We
+will assume that arrangement of traffic lights and road lanes is fixed and that the lights switch
+from red to green to yellow in a regular repetitive pattern.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Terms:
+One Cycle = 10seconds
+Half Cycle = 5seconds
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+
+### Task Description and Acceptance Criteria
+
+• When the light is GREEN on Street A, give Street B a RED light for One Cycle.
+• After the One Cycle give both Street A and B a yellow light for Half Cycle to show ready
+to move.
+• After the Half Cycle give Street A a RED light to stop and give Street B the GREEN light
+to move for One Cycle.
+• and Vice versa
+• When you press the reset button, the light should be initially GREEN on A Street and
+RED on B Street.
+
+---
+
+### Requirements
+
+#### Functional requirements
+
+- There is a need of presentable UI
+- Use React and Styled Components
+- At the end of this challenge, please share a link to both a repository (Github) and a
+  demoable link(Netlify, Codepen).
+
+### Links
+
+- Solution URL: [GitHub repo](https://github.com/Tomi-pter/blusalt_test.git)
+- Live Site URL: [Traffic App](https://blusalttraffic.netlify.app/)
+
+## My process
+
+### Built with
+
+- TypeScript
+- React
+- Styled Components
+
+## Author
+
+- Website - [<TomiPter>](https://www.tomipter.com)
