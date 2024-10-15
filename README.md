@@ -66,4 +66,4 @@ RED on B Street.
 
 ## Author
 
-- Website - [<TomiPter>](https://www.tomipter.com)
+- Website - [TomiPter](https://www.tomipter.com)
